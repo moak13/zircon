@@ -1,0 +1,22 @@
+{
+  "name": "zircon",
+  "description": "Graphics website design",
+  "scripts": {
+    "postdeploy": "bin/setup",
+    "pr-predestroy": "bin/uninstall"
+  },
+  "env": {
+    "Start": "1",
+    "Kill": "0"
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
